@@ -13,7 +13,7 @@ const MetricCard = ({ title, value, change, icon, trend }: MetricCardProps) => {
   const trendColor = trend === "up" ? "text-success" : trend === "down" ? "text-destructive" : "text-muted-foreground";
   
   return (
-    <Card className="p-6 transition-smooth hover:shadow-lg hover:border-accent/30">
+    <Card className="p-6 transition-smooth hover:shadow-lg hover:border-accent/30 hover:-translate-y-1 cursor-pointer group">
       <div className="flex items-center justify-between">
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">{title}</p>
@@ -23,7 +23,7 @@ const MetricCard = ({ title, value, change, icon, trend }: MetricCardProps) => {
             {change}
           </p>
         </div>
-        <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center">
+        <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center group-hover:shadow-glow transition-smooth">
           {icon}
         </div>
       </div>

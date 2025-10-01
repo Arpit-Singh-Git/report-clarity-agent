@@ -85,7 +85,7 @@ export const AlertsSidebar = () => {
             {mockAlerts.map((alert) => (
               <div
                 key={alert.id}
-                className="p-4 rounded-lg border border-border hover:border-accent/50 transition-smooth space-y-2"
+                className="p-4 rounded-lg border border-border hover:border-accent/50 transition-smooth space-y-2 cursor-pointer hover:shadow-md hover:-translate-y-0.5"
               >
                 <div className="flex items-start gap-3">
                   {getAlertIcon(alert.type)}

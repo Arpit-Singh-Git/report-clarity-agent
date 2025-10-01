@@ -87,10 +87,10 @@ export const ReportsList = () => {
           {mockReports.map((report) => (
             <div
               key={report.id}
-              className="flex items-center justify-between p-4 rounded-lg border border-border hover:border-accent/50 transition-smooth hover:shadow-md group"
+              className="flex items-center justify-between p-4 rounded-lg border border-border hover:border-accent/50 transition-smooth hover:shadow-lg hover:-translate-y-1 group cursor-pointer"
             >
               <div className="flex items-center gap-4 flex-1">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center group-hover:shadow-glow transition-smooth">
                   <FileText className="h-5 w-5 text-accent" />
                 </div>
                 

@@ -4,15 +4,15 @@ import { Badge } from "@/components/ui/badge";
 
 export const AIAgentStatus = () => {
   return (
-    <Card className="p-6 gradient-subtle border-accent/20">
+    <Card className="p-6 gradient-subtle border-accent/20 hover:shadow-glow transition-smooth">
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <div className="w-12 h-12 rounded-full gradient-secondary flex items-center justify-center shadow-glow">
+              <div className="w-12 h-12 rounded-full gradient-secondary flex items-center justify-center shadow-glow animate-pulse-glow">
                 <Activity className="h-6 w-6 text-secondary-foreground" />
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-success rounded-full border-2 border-card animate-pulse-glow" />
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-success rounded-full border-2 border-card animate-pulse" />
             </div>
             <div>
               <h3 className="font-semibold">AI Agent Active</h3>
